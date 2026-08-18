@@ -1,0 +1,17 @@
+- Header: No arquivo tem dois logos um do ime e outro da uerj. Acho que dá para colocar o do ime no lado direito já que é o guia do ime para alunos e o da uerj do lado esquerdo. O do ime serve para voltar para o inicio do documento.
+-  Temos uma pagina explicando departamentos da pr1 e como contata-los
+-  Temos uma pagina com a explicação do site na pagina 2. 
+-  Temos uma pagina que é explicando as reitorias que existem e os arrombas delas 
+-  Tem uma pagina explicação sobre a secretaria de graduação e como contata-la
+-  Tem uma pagina explicando os departamentos pertencentes a PR4
+-  Tem uma pagina explicando a direção e como contata-la
+-  Tem uma pagina sobre o aluno online
+-  Tem uma pagna sobre os cursos do ime
+-  Tem uma pagina sobre os departamentos do ime e explicando que tem uma parte do site que divide em departamentos. 
+-  Tem uma pagina que fala sobre o aluno online e com informações que parecem meio jogadas.
+- Tem uma pagina sobre incrições em disciplinas
+- Tem uma pagina sobre links uteis
+- Tem uma pagina sobre ID unico, email institucional, Sou UERJ e wifi uerj 
+-  Tem uma parte sobre as bibliotecas da uerj - rede sirius 
+-  No final do texto ainda tem acho que o que deveria ser o nome do site com o logo do ime de novo??? 
+- Alguém vai ter que fazer um menu para ir para todas essas partes ou a gente poderia fazer como se fosse um livro onde tem um botão passando de parte para parte. Mas, não sei qual seria o design mais responsivo para esse site... 
