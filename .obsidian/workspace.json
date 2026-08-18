@@ -11,14 +11,10 @@
             "id": "6afb2a97529bf76b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Partes.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Partes"
+              "title": "Nova aba"
             }
           }
         ]
@@ -100,7 +96,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Partes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +114,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Partes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -162,7 +156,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Partes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -191,11 +184,17 @@
   },
   "active": "6afb2a97529bf76b",
   "lastOpenFiles": [
+    "Partes.md",
+    "_docs/Partes.md",
+    "_docs/CreditosLayoutTemplate.md",
+    "_docs",
+    "CreditosLayoutTemplate.md",
+    "creditosLayoutTemplate.md",
+    "styles.css",
     "CODEOWNERS",
     "COD",
     "codowners",
     "style.css",
-    "index.html",
-    "Partes.md"
+    "index.html"
   ]
 }
