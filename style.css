@@ -1,0 +1,84 @@
+/* css do header e do footer
+
+   cores
+   #487596  azul do ime (tirei do site www.ime.uerj.br, e a cor do menu "pessoas") -> ver se a vitoria ta usando essas mesmas
+   #f1f1f1  cinza do fundo da pagina (tambem e a cor do body do site do ime)
+   #ffffff  branco do conteudo
+   #345a75  azul mais escuro, usado so na borda de foco
+*/
+
+/* body*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+#container {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* isso centraliza a pagina */
+    background-color: #ffffff;
+}
+
+
+/* header*/
+
+#header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 5px solid #487596;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .logo {
+    height: 80px;
+    width: auto;
+}
+
+.header-titulo {
+    margin: 0;
+    text-align: center;
+    color: #487596;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+/* footer*/
+
+#footer {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-top: 5px solid #487596;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer .logo-footer {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.footer-titulo {
+    margin: 0;
+    color: #487596;
+    font-size: 15px;
+}
+
