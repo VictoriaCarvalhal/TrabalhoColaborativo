@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> header do site </title>
+    <title> Informativo aos Alunos - IME / UERJ </title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,13 +13,17 @@
 
         <header id="header">
 
-            <img class="logo" src="logo_uerj.png" alt="logo da uerj">
+            <figure class="logo-figura" role="img" aria-label="Universidade do Estado do Rio de Janeiro">
+                <img class="logo" src="logo_uerj.png" alt="">
+            </figure>
 
-            <p class="header-titulo">header do site </p>
+            <p class="header-titulo">Informativo aos Alunos - IME / UERJ</p>
 
 
             <a href="index.html">
-                <img class="logo" src="logo_ime.png" alt="pagina inicial">
+            <figure class="logo-figura" role="img" aria-label="Página inicial">
+                    <img class="logo" src="logo_ime.png" alt="">
+                </figure>
             </a>
 
         </header>
@@ -27,14 +31,36 @@
 
         <!-- aqui no meio entram as partes do resto do grupo -->
 
-
         <footer id="footer">
 
             <a href="#header">
-                <img class="logo-footer" src="logo_ime.png" alt="voltar ao topo da pagina">
+
+                 <figure class="logo-figura" role="img" aria-label="Voltar ao topo da página">
+                    <img class="logo-footer" src="logo_ime.png" alt="">
+                </figure>
+
             </a>
 
-            <p class="footer-titulo"> hfooter da pagina</p>
+<div class="footer-blocos">
+
+<div class="footer-texto">
+    <p class="footer-titulo">Informativo aos Alunos</p>
+    <p class="footer-linha">IME - Instituto de Matemática e Estatística</p>
+
+</div>
+            <p class="footer"></p>
+
+                <address class="footer-linha">
+                    Rua São Francisco Xavier, 524, Pavilhão Reitor João Lyra Filho,
+                    6º andar, Maracanã, Rio de Janeiro - RJ, CEP 20550-900
+                </address>
+
+                <p class="footer-linha">
+                    Secretaria de Graduação: Sala 6004, Bloco B, (21) 2334-0934,
+                    <a href="mailto:secime@ime.uerj.br">secime@ime.uerj.br</a>
+                </p>
+
+</div>
 
         </footer>
 

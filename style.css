@@ -70,10 +70,22 @@ body {
     text-align: center;
 }
 
+.footer-linha {
+    margin: 0 0 4px 0;
+    color: #345a75;
+    font-size: 13px;
+    line-height: 1.5;
+    font-style: normal;
+}
+ 
 #footer .logo-footer {
     height: 50px;
     width: auto;
     margin-right: 15px;
+}
+
+.footer-texto {
+    max-width: 600px;
 }
 
 .footer-titulo {
@@ -82,3 +94,74 @@ body {
     font-size: 15px;
 }
 
+
+.footer-titulo2 {
+    margin: 0;
+    color: #487596;
+    font-size: 15px;
+}
+
+
+.footer-subtitulo {
+    margin: 0;
+    color: #000000;
+    font-size: 10px;
+}
+
+/* reponsividade celular e tablet */
+
+
+@media only screen and (max-width: 900px) {
+ 
+    #header {
+        padding: 15px 20px;
+    }
+ 
+    #header .logo {
+        height: 60px;
+    }
+ 
+    .header-titulo {
+        font-size: 18px;
+    }
+ 
+    #footer {
+        padding: 15px 20px;
+    }
+}
+ 
+ 
+
+@media only screen and (max-width: 600px) {
+ 
+    #header {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+ 
+    #header .logo {
+        height: 55px;
+        margin-bottom: 12px;
+    }
+ 
+    .header-titulo {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+ 
+    #footer {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+ 
+    #footer .logo-footer {
+        height: 45px;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+ 
+    .footer-titulo {
+        font-size: 14px;
+    }
+}
+ 
