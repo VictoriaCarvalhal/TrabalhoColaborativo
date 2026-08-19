@@ -94,6 +94,10 @@ main {
     color: #1E2D40;
 }
 
+#leftSidebar li {
+    margin-bottom: 10px;
+}
+
 #rightSidebar {
     order: 3;
 }
