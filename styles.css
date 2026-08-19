@@ -157,3 +157,55 @@ strong {
     }
 }
 
+#header {
+width: 100%;
+background-color: #ffffff;
+padding: 20px 30px;
+border-bottom: 5px solid #487596;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+#header .logo {
+height: 80px;
+width: auto;
+}
+
+.header-titulo {
+    margin: 0;
+    text-align: center;
+    color: #487596;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+/* footer*/
+
+#footer {
+width: 100%;
+background-color: #ffffff;
+padding: 20px 30px;
+border-top: 5px solid #487596;
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+#footer .logo-footer {
+height: 50px;
+width: auto;
+margin-right: 15px;
+}
+
+.footer-titulo {
+    margin: 0;
+    color: #487596;
+    font-size: 15px;
+}
+
