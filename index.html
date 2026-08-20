@@ -5,67 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Informativo aos Alunos - IME / UERJ </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div id="container">
+        <div id="header">
+            <!--será preenchido dinamicamente com /components/header.html por /js/components.js-->
+        </div>
+        <div id="headerArea">
+            <nav id="navbar">
+                <!--será preenchido dinamicamente com /components/navbar.html por /js/components.js-->
+            </nav>
+        </div>
 
-        <header id="header">
+        <div id="flex">
+            <aside id="leftSidebar">
+                <!--será preenchido dinamicamente com /components/sidebar.html por /js/components.js-->
+            </aside>
+            <main>
+                <h2>Explicação da página</h2>
+                <p><strong> É com muita alegria que a Uerj recebe você. Ingressar na Universidade é o início de uma nova etapa, cheia de aprendizados, desafios e descorbertas. A Uerj é um espaço de conhecimento, diversidade e transformação, e cada estudante faz parte dessa construção coletiva.</strong></p>
+                <p><strong>Aqui, você não está apenas começando um curso, mas vivendo uma experiência que vai marcar sua trajetória pessoal e profissional. Conte com a universidade, com seus setores e com as pessoas que fazem parte dela. Seja curioso(a), participe, pergunte e aproveite tudo o que esse caminho tem a oferecer. </strong></p>
+                <p>Esta página foi criada com o objetivo de disponibilizar informações importantes que a Secretaria do IME gostaria que os alunos calouros e veteranos tivessem acesso.</p>
+                <p>Com esse objetivo em mente, a turma de Desenvolvimento Web desenvolveu esta página, estruturando um cabeçalho com os principais tópicos, organizados de maneira estratégica para facilitar a navegação e permitir que os alunos encontrem rapidamente as informações que procuram.</p>
+                <p> Por exemplo, caso o aluno queira obter informações sobre os nossos cursos, basta acessar a opção <strong>“Nossos Cursos”</strong>, disponível no cabeçalho da página ou no menu lateral esquerdo, que também reúne outras opções de navegação.</p>
+                    <h2>Na Opção Cursos e departamentos</h2>
+                        <ul>
+                            <li>
+                                Aqui está a lista de todos os cursos oferecidos pelo IME, juntamente com as respectivas coordenações. Essas informações são especialmente úteis para os alunos que desejam saber quem é o coordenador de seu curso, além de consultar os nomes e e-mails do chefe e do subchefe, caso precisem entrar em contato com algum deles.
+                            </li>
+                        </ul>
+                    <h2>Na opção Biblioteca</h2>
+                        <ul>
+                            <li>
+                                Haverá um link para o site oficial da Rede Sirius, onde os alunos poderão consultar informações sobre o funcionamento e a utilização da biblioteca, além de um link específico para realizar a inscrição ou o cadastro.
+                            </li>
+                        </ul>
+                    <h2>Na opcão Reitoria</h2>
+                        <ul>
+                            <li>
+                                Aqui estarão disponíveis informações sobre a Reitoria e a Vice-Reitoria do IME, além de todas as Pró-Reitorias, acompanhadas de seus respectivos contatos, como telefone e e-mail.
 
-            <figure class="logo-figura" role="img" aria-label="Universidade do Estado do Rio de Janeiro">
-                <img class="logo" src="logo_uerj.png" alt="">
-            </figure>
+                            </li>
+                        </ul>
+                    <h2>Na opção Aluno Online</h2>
+                        <ul>
+                            <li>
+                                Aqui você encontrará as principais informações que todo aluno deve saber sobre o Aluno Online, plataforma utilizada para a inscrição em disciplinas e que oferece diversas outras funcionalidades. Cada recurso é apresentado de forma detalhada na aba, incluindo exemplos e capturas de tela para facilitar a compreensão e orientar os alunos durante o uso da plataforma.
+                            </li>
+                        </ul>
+                    <h2>Na opção links úteis</h2>
+                        <ul>
+                            <li>
+                                Aqui estará disponível uma aba com os principais links que podem ser úteis tanto para alunos ingressantes quanto para veteranos. Nela, estarão reunidos acessos importantes, como o <strong>Aluno Online</strong>, a <strong>Biblioteca</strong>, entre outros serviços e plataformas utilizados pelos alunos.
 
-            <p class="header-titulo">Informativo aos Alunos - IME / UERJ</p>
-
-
-            <a href="index.html">
-            <figure class="logo-figura" role="img" aria-label="Página inicial">
-                    <img class="logo" src="logo_ime.png" alt="">
-                </figure>
-            </a>
-
-        </header>
-
-
-        <!-- aqui no meio entram as partes do resto do grupo -->
-
+                            </li>
+                        </ul>
+                <p style="text-align: center;"><strong>Bem-vindo(a) à Uerj!</strong></p>
+                <p style="text-align: center;"><strong>Bem-vindo(a) ao  IME!</strong></p>
+            </main>
+        </div>
         <footer id="footer">
-
-            <a href="#header">
-
-                 <figure class="logo-figura" role="img" aria-label="Voltar ao topo da página">
-                    <img class="logo-footer" src="logo_ime.png" alt="">
-                </figure>
-
-            </a>
-
-<div class="footer-blocos">
-
-<div class="footer-texto">
-    <p class="footer-titulo">Informativo aos Alunos</p>
-    <p class="footer-linha">IME - Instituto de Matemática e Estatística</p>
-
-</div>
-            <p class="footer"></p>
-
-                <address class="footer-linha">
-                    Rua São Francisco Xavier, 524, Pavilhão Reitor João Lyra Filho,
-                    6º andar, Maracanã, Rio de Janeiro - RJ, CEP 20550-900
-                </address>
-
-                <p class="footer-linha">
-                    Secretaria de Graduação: Sala 6004, Bloco B, (21) 2334-0934,
-                    <a href="mailto:secime@ime.uerj.br">secime@ime.uerj.br</a>
-                </p>
-
-</div>
-
+            <!--será preenchido dinamicamente com /components/footer.html por /js/components.js-->
         </footer>
-
     </div>
-    <script src="../js/components.js"></script>
+    <script src="js/components.js"></script>
 </body>
 
 </html>
