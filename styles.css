@@ -16,7 +16,7 @@ body {
 }
 
 #container {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 #navbar {
-    height: 40px;
+    padding: 12px 0;
     background-color: #1E2D40/*#1E2D40*/;
     width: 100%;
 }
@@ -59,6 +59,8 @@ body {
 
 #navbar li a {
     color: #45718C/*#45718C*/;
+    padding: 10px 15px;
+    display: inline-block;
     font-weight: 800;
     text-decoration: none;
 }
