@@ -212,3 +212,91 @@ margin-right: 15px;
     font-size: 15px;
 }
 
+
+
+/* resto do css do header e do footer que faltava aqui */
+
+/* a tag figure vem com margem do navegador, entao eu zero */
+.logo-figura {
+    margin: 0;
+}
+
+/* as regras antigas la de cima fixam #header em 150px e footer em 40px.
+   com auto os dois voltam a crescer conforme o conteudo */
+#header {
+    height: auto;
+}
+
+#footer {
+    height: auto;
+}
+
+.footer-texto {
+    max-width: 600px;
+}
+
+.footer-linha {
+    margin: 0 0 4px 0;
+    color: #345a75;
+    font-size: 13px;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+
+/* reponsividade celular e tablet */
+
+
+@media only screen and (max-width: 900px) {
+
+    #header {
+        padding: 15px 20px;
+    }
+
+    #header .logo {
+        height: 60px;
+    }
+
+    .header-titulo {
+        font-size: 18px;
+    }
+
+    #footer {
+        padding: 15px 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #header {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    #header .logo {
+        height: 55px;
+        margin-bottom: 12px;
+    }
+
+    .header-titulo {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    #footer {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    #footer .logo-footer {
+        height: 45px;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .footer-titulo {
+        font-size: 14px;
+    }
+}
