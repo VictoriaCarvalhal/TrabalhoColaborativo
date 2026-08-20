@@ -1,4 +1,3 @@
-
 :root {
     --header-image: url('');
     --body-bg-image: url('');
@@ -93,6 +92,10 @@ main {
 
 #leftSidebar>h2 {
     color: #1E2D40;
+}
+
+#leftSidebar li {
+    margin-bottom: 10px;
 }
 
 #rightSidebar {
