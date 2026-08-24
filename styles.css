@@ -2,17 +2,22 @@
     --header-image: url('');
     --body-bg-image: url('');
 
-    --content: 
+    --content:
 }
 
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: #6eb5e0/*#1E2D40*/;
+    background-color: #6eb5e0;
 }
 
 * {
     box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 #container {
@@ -21,26 +26,26 @@ body {
 }
 
 #container a {
-    color: #45718C /*#83c0f5*//*#45718C*/;
+    color: #45718C;
     font-weight: bold;
     text-decoration: none;
 }
 
-#container a:hover{
+#container a:hover {
     color: #11C5D9;
     text-decoration: underline;
 }
 
 #header {
     width: 100%;
-    background-color: #F2F2F2/*#F2F2F2*/;
+    background-color: #F2F2F2;
     height: 150px;
     background-size: 100%;
 }
 
 #navbar {
     padding: 12px 0;
-    background-color: #1E2D40/*#1E2D40*/;
+    background-color: #1E2D40;
     width: 100%;
 }
 
@@ -56,9 +61,8 @@ body {
     padding-top: 10px;
 }
 
-
 #navbar li a {
-    color: #45718C/*#45718C*/;
+    color: #45718C;
     padding: 10px 15px;
     display: inline-block;
     font-weight: 800;
@@ -66,7 +70,7 @@ body {
 }
 
 #navbar li a:hover {
-    color: #11C5D9/*#a49cba*/;
+    color: #11C5D9;
     text-decoration: underline;
 }
 
@@ -75,17 +79,18 @@ body {
 }
 
 aside {
-    background-color: #45718C/*#241445*/;
+    background-color: #45718C;
     width: 200px;
     padding: 20px;
     font-size: smaller;
 }
 
 main {
-    background-color: #F2F2F2/*#0583F2*/;
+    background-color: #F2F2F2;
     flex: 1;
     padding: 20px;
     order: 2;
+    overflow-wrap: break-word;
 }
 
 #leftSidebar {
@@ -95,9 +100,9 @@ main {
 #leftSidebar:empty,
 #leftSidebar:not(:has(*)) {
     display: none;
-} 
+}
 
-#leftSidebar>h2 {
+#leftSidebar > h2 {
     color: #1E2D40;
 }
 
@@ -110,7 +115,7 @@ main {
 }
 
 footer {
-    background-color: #1E2D40/*#1E2D40*/;
+    background-color: #1E2D40;
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -120,7 +125,7 @@ footer {
 h1,
 h2,
 h3 {
-    color: #1a2730/*#45718C*/;
+    color: #1a2730;
 }
 
 h1 {
@@ -128,12 +133,12 @@ h1 {
 }
 
 strong {
-    color: #1a2730/*#45718C*/;
+    color: #1a2730;
 }
 
 .box {
-    background-color: #F2F2F2/*#1E2D40*/;
-    border: 1px solid #1a2730/*#45718C*/;
+    background-color: #F2F2F2;
+    border: 1px solid #1a2730;
     padding: 10px;
 }
 
@@ -142,7 +147,7 @@ strong {
     height: 30px;
     padding: 10px;
     font-size: smaller;
-    background-color: #83c0f5/*#1E2D40*/;
+    background-color: #83c0f5;
 }
 
 @media only screen and (max-width: 800px) {
@@ -168,19 +173,19 @@ strong {
 }
 
 #header {
-width: 100%;
-background-color: #ffffff;
-padding: 20px 30px;
-border-bottom: 5px solid #487596;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 5px solid #487596;
 
-display: flex;
-align-items: center;
-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #header .logo {
-height: 80px;
-width: auto;
+    height: 80px;
+    width: auto;
 }
 
 .header-titulo {
@@ -191,18 +196,16 @@ width: auto;
     font-weight: bold;
 }
 
-
-
-/* footer*/
+/* footer */
 
 #footer {
-background-color: #ffffff;
-border-top: 5px solid #487596 !important;
+    background-color: #ffffff;
+    border-top: 5px solid #487596 !important;
 }
 
 #footer .logo-footer {
-height: 50px;
-width: auto;
+    height: 50px;
+    width: auto;
 }
 
 .footer-titulo {
@@ -211,17 +214,12 @@ width: auto;
     font-size: 15px;
 }
 
+/* resto do css do header e do footer */
 
-
-/* resto do css do header e do footer que faltava aqui */
-
-/* a tag figure vem com margem do navegador, entao eu zero */
 .logo-figura {
     margin: 0;
 }
 
-/* as regras antigas la de cima fixam #header em 150px e footer em 40px.
-   com auto os dois voltam a crescer conforme o conteudo */
 #header {
     height: auto;
 }
@@ -270,9 +268,7 @@ width: auto;
     color: #345a75;
 }
 
-
-/* reponsividade celular e tablet */
-
+/* responsividade celular e tablet */
 
 @media only screen and (max-width: 900px) {
 
@@ -288,8 +284,6 @@ width: auto;
         font-size: 18px;
     }
 }
-
-
 
 @media only screen and (max-width: 600px) {
 
@@ -315,5 +309,9 @@ width: auto;
 
     .footer-titulo {
         font-size: 14px;
+    }
+
+    .footer-coluna-links ul {
+        grid-template-columns: 1fr;
     }
 }
