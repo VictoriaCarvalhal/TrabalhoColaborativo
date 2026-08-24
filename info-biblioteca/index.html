@@ -1,38 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caderno de Orientações Alunos IME</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
     <div id="container">
-        <div id="header">
-            <!--será preenchido dinamicamente com /components/header.html por /js/components.js-->
-        </div>
-        <div id="headerArea">
-            <nav id="navbar">
-               <!--será preenchido dinamicamente com /components/navbar.html por /js/components.js-->
-            </nav>
-        </div>
-    
-        <div id="flex">
-            <aside id="leftSidebar">
-                <!--será preenchido dinamicamente com /components/sidebar.html por /js/components.js-->
-            </aside>
-            <main>
-                <h2>Bibliotecas da Uerj - Rede Sirius</h2>
-                <p>Acesse o <a href="http://www.rsirius.uerj.br">site oficial da Rede Sirius</a> para mais informações sobre o uso das bibliotecas.</p>
-                <p>Clique <a href="http://www.rsirius.uerj.br/extras/inscreva-se">aqui</a> para se cadastrar.</p>
-            </main>
-        </div>
-        <footer id="footer">
-            <!--será preenchido dinamicamente com /components/footer.html por /js/components.js-->
-        </footer>
+      <div id="header" role="banner">
+        <!--será preenchido dinamicamente com /components/header.html por /js/components.js-->
+      </div>
+      <div id="headerArea">
+        <nav id="navbar" role="navigation">
+          <!--será preenchido dinamicamente com /components/navbar.html por /js/components.js-->
+        </nav>
+      </div>
+
+      <div id="flex">
+        <aside id="leftSidebar" role="complementary">
+          <!--será preenchido dinamicamente com /components/sidebar.html por /js/components.js-->
+        </aside>
+        <main role="main">
+          <h2>Bibliotecas da Uerj - Rede Sirius</h2>
+          <p>
+            Acesse o
+            <a href="http://www.rsirius.uerj.br">site oficial da Rede Sirius</a>
+            para mais informações sobre o uso das bibliotecas.
+          </p>
+          <p>
+            Clique
+            <a href="http://www.rsirius.uerj.br/extras/inscreva-se">aqui</a>
+            para se cadastrar.
+          </p>
+        </main>
+      </div>
+      <footer id="footer" role="contentinfo">
+        <!--será preenchido dinamicamente com /components/footer.html por /js/components.js-->
+      </footer>
     </div>
     <script src="../js/components.js"></script>
-</body>
-
+  </body>
 </html>

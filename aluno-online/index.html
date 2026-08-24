@@ -1,65 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caderno de Orientações Alunos IME - Aluno Online</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
     <div id="container">
-        <div id="header"></div>
-        <div id="headerArea">
-            <nav id="navbar">
-               <!--será preenchido dinamicamente-->
-            </nav>
-        </div>
-    
-        <div id="flex">
-            <aside id="leftSidebar">
-                <!--Será preenchido dinâmicamente-->
-            </aside>
-            <main>
-                <h2>Aluno Online</h2>
-                <p>A plataforma Aluno Online da Uerj é um sistema
-                    digital que permite ao estudante acessar e gerenciar
-                    diversas informações acadêmicas de forma simples,
-                    prática e segura pela internet.</p>
-                <p>A plataforma foi criada para centralizar serviços que 
-                    antes estavam distribuídos em diferentes sistemas ou
-                    só eram possíveis presencialmente. Com ela, os alunos podem:</p>
-                <ul>
-                    <li>Consultar dados sobre o seu curso, disciplinas e horários;</li>
-                    <li>Acessar fluxo curricular, grades de disciplinas e ementas;</li>
-                    <li>Fazer inscrição em disciplinas (quando aplicável);</li>
-                    <li>Emitir documentos importantes, como Histórico Escolar, 
-                        declaração de matrícula e de conclusão de curso, entre outras.</li>
-                    <li>Gerar a carteira de estudante digital</li>
-                    <li>Acompanhar o andamento de processos acadêmicos vinculados ao seu registro,</li>
-                    <li>Entre outros.</li>
-                </ul>
+      <div id="header" role="banner"></div>
+      <div id="headerArea">
+        <nav id="navbar" role="navigation">
+          <!--será preenchido dinamicamente-->
+        </nav>
+      </div>
 
-                <p style="text-align: center;"><strong>Visão Geral do Aluno Online</strong></p>
+      <div id="flex">
+        <aside id="leftSidebar" role="complementary">
+          <!--Será preenchido dinâmicamente-->
+        </aside>
+        <main role="main">
+          <h2>Aluno Online</h2>
+          <p>
+            A plataforma Aluno Online da Uerj é um sistema digital que permite
+            ao estudante acessar e gerenciar diversas informações acadêmicas de
+            forma simples, prática e segura pela internet.
+          </p>
+          <p>
+            A plataforma foi criada para centralizar serviços que antes estavam
+            distribuídos em diferentes sistemas ou só eram possíveis
+            presencialmente. Com ela, os alunos podem:
+          </p>
+          <ul>
+            <li>Consultar dados sobre o seu curso, disciplinas e horários;</li>
+            <li>Acessar fluxo curricular, grades de disciplinas e ementas;</li>
+            <li>Fazer inscrição em disciplinas (quando aplicável);</li>
+            <li>
+              Emitir documentos importantes, como Histórico Escolar, declaração
+              de matrícula e de conclusão de curso, entre outras.
+            </li>
+            <li>Gerar a carteira de estudante digital</li>
+            <li>
+              Acompanhar o andamento de processos acadêmicos vinculados ao seu
+              registro,
+            </li>
+            <li>Entre outros.</li>
+          </ul>
 
-                <figure class="img-alunoOnline" role="img" aria-label="Imagem do menu geral do ALuno Online">
-                    <img class="img-alunoOnlineGeral" src="../img/visaoAO.png" alt="" style="display:block; margin:0 auto;">
-                </figure>
+          <p style="text-align: center">
+            <strong>Visão Geral do Aluno Online</strong>
+          </p>
 
+          <figure
+            class="img-alunoOnline"
+            role="img"
+            aria-label="Imagem do menu geral do ALuno Online"
+          >
+            <img
+              class="img-alunoOnlineGeral"
+              src="../img/visaoAO.png"
+              alt=""
+              style="display: block; margin: 0 auto"
+            />
+          </figure>
 
-                <p style="text-align: center;"><strong>Exemplo de uma pesquisa dentro da plataforma. Documentos que podem ser emitidos.</strong></p>
+          <p style="text-align: center">
+            <strong
+              >Exemplo de uma pesquisa dentro da plataforma. Documentos que
+              podem ser emitidos.</strong
+            >
+          </p>
 
-                <figure class="img-alunoOnline" role="img" aria-label="Imagem de uma pesquisa no ALuno Online">
-                    <img class="img-alunoOnlinePesquisa" src="../img/pesquisaAO.png" alt="" style="display:block; margin:0 auto;">
-                </figure>
-
-
-            </main>
-        </div>
-        <footer id="footer"></footer>
+          <figure
+            class="img-alunoOnline"
+            role="img"
+            aria-label="Imagem de uma pesquisa no ALuno Online"
+          >
+            <img
+              class="img-alunoOnlinePesquisa"
+              src="../img/pesquisaAO.png"
+              alt=""
+              style="display: block; margin: 0 auto"
+            />
+          </figure>
+        </main>
+      </div>
+      <footer id="footer" role="contentinfo"></footer>
     </div>
     <script src="../js/components.js"></script>
-</body>
-
+  </body>
 </html>
-

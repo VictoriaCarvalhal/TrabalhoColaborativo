@@ -1,107 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caderno de Orientações Alunos IME</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
 
-<body>
+  <body>
     <div id="container">
-        <div id="header"></div>
-        <div id="headerArea">
-            <nav id="navbar">
-                <ul>
-                    <!--será preenchido dinamicamente-->
-                </ul>
-            </nav>
-        </div>
+      <div id="header" role="banner"></div>
+      <div id="headerArea">
+        <nav id="navbar" role="navigation">
+          <ul>
+            <!--será preenchido dinamicamente-->
+          </ul>
+        </nav>
+      </div>
 
-        <div id="flex">
-            <aside id="leftSidebar">
-                <h2>Side Bar da Esquerda</h2>
-                <div class="box">
-                    <ul>
-                        <!--Será preenchido dinâmicamente-->
-                    </ul>
-                </div>
+      <div id="flex">
+        <aside id="leftSidebar" role="complementary">
+          <h2>Side Bar da Esquerda</h2>
+          <div class="box">
+            <ul>
+              <!--Será preenchido dinâmicamente-->
+            </ul>
+          </div>
+        </aside>
+        <main role="main">
+          <article class="card-texto">
+            <h1>Inscrição em Disciplinas</h1>
 
-            </aside>
-            <main>
-                <article class="card-texto">
-                    <h1>Inscrição em Disciplinas</h1>
+            <p>
+              A partir do segundo período, a inscrição em disciplinas é
+              realizada através do Aluno Online, no módulo de Inscrição em
+              Disciplinas.
+            </p>
 
-                    <p>
-                        A partir do segundo período, a inscrição em disciplinas
-                        é realizada através do Aluno Online, no módulo de
-                        Inscrição em Disciplinas.
-                    </p>
+            <h2>SID</h2>
 
-                    <h2>SID</h2>
+            <p>
+              O SID (Solicitar Inscrição) é a opção utilizada para solicitar a
+              inscrição nas disciplinas.
+            </p>
 
-                    <p>
-                        O SID (Solicitar Inscrição) é a opção utilizada para
-                        solicitar a inscrição nas disciplinas.
-                    </p>
+            <h2>RID</h2>
 
-                    <h2>RID</h2>
+            <p>O RID é utilizado para consultar o resultado das inscrições.</p>
 
-                    <p>
-                        O RID é utilizado para consultar o resultado das inscrições.
-                    </p>
+            <h2>SAID</h2>
 
-                    <h2>SAID</h2>
+            <p>
+              Após o resultado definitivo, o aluno pode realizar alterações na
+              inscrição através do SAID.
+            </p>
 
-                    <p>
-                        Após o resultado definitivo, o aluno pode realizar
-                        alterações na inscrição através do SAID.
-                    </p>
+            <h3>Opções do SAID</h3>
 
-                    <h3>Opções do SAID</h3>
+            <ul>
+              <li>
+                Solicitar reinscrição em uma disciplina que não conseguiu vaga.
+              </li>
+              <li>Substituir uma disciplina ou trocar de turma.</li>
+              <li>Substituir no máximo três disciplinas.</li>
+              <li>
+                Cancelar disciplinas, mantendo no mínimo três disciplinas.
+              </li>
+            </ul>
 
-                    <ul>
-                        <li>Solicitar reinscrição em uma disciplina que não conseguiu vaga.</li>
-                        <li>Substituir uma disciplina ou trocar de turma.</li>
-                        <li>Substituir no máximo três disciplinas.</li>
-                        <li>Cancelar disciplinas, mantendo no mínimo três disciplinas.</li>
-                    </ul>
+            <p class="aviso">
+              <strong>Atenção:</strong> uma mesma disciplina só pode ser
+              cancelada duas vezes.
+            </p>
+          </article>
 
-                    <p class="aviso">
-                        <strong>Atenção:</strong> uma mesma disciplina só pode ser
-                        cancelada duas vezes.
-                    </p>
-                </article>
+          <article class="card-texto">
+            <p>O RID permite consultar o resultado das inscrições.</p>
 
-                <article class="card-texto">
-                    <p>
-                        O RID permite consultar o resultado das inscrições.
-                    </p>
-                    
-                    <h2>SAID</h2>
-                    <p>
-                        O SAID é utilizado para realizar alterações na inscrição
-                        após o resultado definitivo.
-                    </p>
-                    
-                    <h3>Opções do SAID</h3>
-                    
-                    <ul>
-                        <li>Reinscrição em disciplina.</li>
-                        <li>Substituição de disciplina ou turma.</li>
-                        <li>Cancelamento de disciplina.</li>
-                    </ul>
-                    
-                    <p>
-                        Atenção: uma mesma disciplina só pode ser cancelada duas vezes.
-                    </p>
-                </article>
-            </main>
-        </div>
-        <footer id="footer"></footer>
+            <h2>SAID</h2>
+            <p>
+              O SAID é utilizado para realizar alterações na inscrição após o
+              resultado definitivo.
+            </p>
+
+            <h3>Opções do SAID</h3>
+
+            <ul>
+              <li>Reinscrição em disciplina.</li>
+              <li>Substituição de disciplina ou turma.</li>
+              <li>Cancelamento de disciplina.</li>
+            </ul>
+
+            <p>
+              Atenção: uma mesma disciplina só pode ser cancelada duas vezes.
+            </p>
+          </article>
+        </main>
+      </div>
+      <footer id="footer" role="contentinfo"></footer>
     </div>
     <script src="../js/components.js"></script>
-</body>
-
+  </body>
 </html>
