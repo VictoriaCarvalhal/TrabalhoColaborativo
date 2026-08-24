@@ -90,6 +90,11 @@ main {
 
 #leftSidebar {
     order: 1;
+}
+
+#leftSidebar:empty,
+#leftSidebar:not(:has(*)) {
+    display: none;
 } 
 
 #leftSidebar>h2 {
@@ -191,25 +196,17 @@ width: auto;
 /* footer*/
 
 #footer {
-width: 100%;
 background-color: #ffffff;
-padding: 20px 30px;
-border-top: 5px solid #487596;
-
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
+border-top: 5px solid #487596 !important;
 }
 
 #footer .logo-footer {
 height: 50px;
 width: auto;
-margin-right: 15px;
 }
 
 .footer-titulo {
-    margin: 0;
+    margin: 0 0 10px 0;
     color: #487596;
     font-size: 15px;
 }
@@ -245,6 +242,34 @@ margin-right: 15px;
     font-style: normal;
 }
 
+.footer-coluna-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+}
+
+.footer-coluna-links li {
+    margin-bottom: 6px;
+}
+
+.footer-coluna-links a {
+    color: #345a75;
+    font-size: 13px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.footer-coluna-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-coluna-contato a {
+    color: #345a75;
+}
+
 
 /* reponsividade celular e tablet */
 
@@ -261,10 +286,6 @@ margin-right: 15px;
 
     .header-titulo {
         font-size: 18px;
-    }
-
-    #footer {
-        padding: 15px 20px;
     }
 }
 
@@ -287,14 +308,8 @@ margin-right: 15px;
         margin-bottom: 12px;
     }
 
-    #footer {
-        flex-direction: column;
-        padding: 20px 15px;
-    }
-
     #footer .logo-footer {
         height: 45px;
-        margin-right: 0;
         margin-bottom: 12px;
     }
 
