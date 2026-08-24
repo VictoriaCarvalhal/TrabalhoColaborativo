@@ -197,7 +197,7 @@ width: auto;
 
 #footer {
 background-color: #ffffff;
-border-top: 5px solid #487596;
+border-top: 5px solid #487596 !important;
 }
 
 #footer .logo-footer {
