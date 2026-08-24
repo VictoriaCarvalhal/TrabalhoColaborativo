@@ -90,6 +90,11 @@ main {
 
 #leftSidebar {
     order: 1;
+}
+
+#leftSidebar:empty,
+#leftSidebar:not(:has(*)) {
+    display: none;
 } 
 
 #leftSidebar>h2 {
@@ -196,16 +201,18 @@ background-color: #ffffff;
 padding: 20px 30px;
 border-top: 5px solid #487596;
 
-display: flex;
-align-items: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 40px;
+align-items: start;
 justify-content: center;
-text-align: center;
+text-align: left;
 }
 
 #footer .logo-footer {
 height: 50px;
 width: auto;
-margin-right: 15px;
+margin-bottom: 10px;
 }
 
 .footer-titulo {
@@ -245,6 +252,44 @@ margin-right: 15px;
     font-style: normal;
 }
 
+.footer-coluna {
+    min-width: 0;
+}
+
+.footer-coluna-instituto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-coluna-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+}
+
+.footer-coluna-links li {
+    margin: 0 0 6px 0;
+}
+
+.footer-coluna-links a {
+    color: #345a75;
+    font-size: 13px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.footer-coluna-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-coluna-contato a {
+    color: #345a75;
+}
+
 
 /* reponsividade celular e tablet */
 
@@ -265,6 +310,7 @@ margin-right: 15px;
 
     #footer {
         padding: 15px 20px;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -288,8 +334,8 @@ margin-right: 15px;
     }
 
     #footer {
-        flex-direction: column;
         padding: 20px 15px;
+        grid-template-columns: 1fr;
     }
 
     #footer .logo-footer {
