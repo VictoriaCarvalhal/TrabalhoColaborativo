@@ -11,53 +11,70 @@
         <li><a href="/inscricao-disciplinas/">Inscrição em Disciplinas</a></li>
     </ul>
 </nav> -->
-<nav class="navbar navbar-expand-xl navbar-light">
+<nav class="navbar navbar-expand-xl navbar-light navbar-ime" aria-label="Menu principal">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/Explicacao-site/">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuIme" aria-controls="menuIme" aria-label="Abrir menu de navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/reitoria-sec/">Reitoria</a>
-                </li>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="menuIme" aria-labelledby="menuImeTitulo">
+            <div class="offcanvas-header">
+                <span class="offcanvas-title" id="menuImeTitulo">Menu</span>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar menu"></button>
+            </div>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Departamentos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="/pr1/">PR1</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="/departamentos-pr4/">PR4</a>
-                        </li>
-                    </ul>
-                </li>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/aluno-online/">Aluno Online</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-home" href="/Explicacao-site/" title="Home">
+                            <svg class="icone-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3L12 3z" />
+                            </svg>
+                            <span class="rotulo-home">Home</span>
+                        </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/ID-Email-SouUerj/">ID, Email e SOU UERJ</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reitoria-sec/">Reitoria</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/cursos-departamentos/">Cursos e Departamentos</a>
-                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pró-reitorias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/pr1/">PR1 - Graduação</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/departamentos-pr4/">PR4 - Assistência Estudantil</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/info-biblioteca/">Biblioteca</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aluno-online/">Aluno Online</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/inscricao-disciplinas/">Inscrição em Disciplinas</a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ID-Email-SouUerj/" title="ID, Email e SOU UERJ">ID e Email</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cursos-departamentos/" title="Cursos e Departamentos">Cursos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/info-biblioteca/">Biblioteca</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/inscricao-disciplinas/" title="Inscrição em Disciplinas">Inscrição</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
