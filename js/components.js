@@ -53,4 +53,52 @@ async function loadComponents() {
     }
 }
 
-loadComponents();
+// o navegador pula para a ancora antes de os componentes serem injetados,
+// e a altura do header injetado depois joga o alvo para fora da tela.
+// por isso o pulo e refeito quando o carregamento termina.
+function irParaAncora() {
+    if (!location.hash) return;
+
+    const alvo = document.getElementById(location.hash.slice(1));
+
+    if (!alvo) return;
+
+    // posicao calculada na mao para o alvo parar no topo da janela
+    const topo = alvo.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo(0, topo);
+
+    // o tabindex="-1" no alvo faz o leitor de tela acompanhar o pulo.
+    // preventScroll para o foco nao desfazer o scrollTo acima
+    if (alvo.hasAttribute("tabindex")) alvo.focus({ preventScroll: true });
+}
+
+// espera o resto da pagina (css do bootstrap, imagens ja no html)
+function paginaCarregada() {
+    if (document.readyState === "complete") return Promise.resolve();
+
+    return new Promise(function (resolve) {
+        window.addEventListener("load", resolve, { once: true });
+    });
+}
+
+// espera as imagens que vieram junto com os componentes injetados
+function imagensCarregadas() {
+    const pendentes = Array.from(document.images).filter(function (img) {
+        return !img.complete;
+    });
+
+    return Promise.all(pendentes.map(function (img) {
+        return new Promise(function (resolve) {
+            img.addEventListener("load", resolve, { once: true });
+            img.addEventListener("error", resolve, { once: true });
+        });
+    }));
+}
+
+// o pulo so vale depois que tudo que muda altura ja assentou, senao o
+// alvo escorrega para fora da tela
+loadComponents()
+    .then(paginaCarregada)
+    .then(imagensCarregadas)
+    .then(irParaAncora);
