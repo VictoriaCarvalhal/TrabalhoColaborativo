@@ -1,28 +1,30 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caderno de Orientações Alunos IME</title>
+    <title>Cursos e Departamentos - Informativo aos Alunos IME</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="container">
-        <div id="header">
+        <div id="header" role="banner">
             <!--será preenchido dinamicamente com /components/header.html por /js/components.js-->
         </div>
         <div id="headerArea">
-            <nav id="navbar">
+            <nav id="navbar" role="navigation">
                <!--será preenchido dinamicamente com /components/navbar.html por /js/components.js-->
             </nav>
         </div>
     
         <div id="flex">
-            <aside id="leftSidebar">
+            <aside id="leftSidebar" role="complementary">
                 <!--será preenchido dinamicamente com /components/sidebar.html por /js/components.js-->
             </aside>
-            <main>
+            <main id="conteudo" tabindex="-1" role="main">
+                <h1>Cursos e Departamentos</h1>
+
                 <h2>Nossos Cursos</h2>
 
                 <ul>
@@ -127,11 +129,11 @@
                      No site do Instituto de Matemática e Estatística (IME), há uma área organizada por departamentos na qual estão listados os docentes efetivos vinculados a cada um desses departamentos, bem como seus respectivos e-mails institucionais.
                 </p>
 
-                <figure class="img-deps" role="img" aria-label="Imagem do menu de departamentos">
-                    <img class="img-deps" src="../img/departamentos.png" alt="" style="display:block; margin:0 auto;">
+                <figure class="img-deps">
+                    <img class="img-deps" src="../img/departamentos.png" alt="Menu Pessoas do site do IME aberto no celular, com os itens Direção, Secretaria, Professores, Alunos, Técnicos e Oportunidades. O item Professores está expandido e mostra os subitens Departamentos, Sistema de Chamados, Reserva de Salas, Professor Online e Webmail IME." title="Menu de Departamentos no site do IME" style="display:block; margin:0 auto;">
                 </figure>
 
-                <p style="text-align: center;"><a href="http://www.ime.uerj.br/departamento">www.ime.uerj.br/departamento</a></p>
+                <p style="text-align: center;"><a href="https://www.ime.uerj.br/departamento">www.ime.uerj.br/departamento</a></p>
 
                 <p>
                     No início de cada período acadêmico, deve-se proceder à exclusão dos documentos anteriormente
@@ -143,13 +145,13 @@
 
                 <p style="text-align: center;"><strong>Site do IME - Área do Aluno</strong></p>
 
-                <figure class="img-deps" role="img" aria-label="Imagem do menu de departamentos">
-                    <img class="img-deps" src="../img/areaAluno.png" alt="" style="display:block; margin:0 auto;">
+                <figure class="img-deps">
+                    <img class="img-deps" src="../img/areaAluno.png" alt="Mesmo menu do site do IME com o item Alunos expandido, mostrando os subitens Cursos da Graduação, Monitoria, Requerimentos, Aluno Online, Ementário UERJ e Manual do Estudante UERJ." title="Área do Aluno no site do IME" style="display:block; margin:0 auto;">
                 </figure>
 
             </main>
         </div>
-        <footer id="footer">
+        <footer id="footer" role="contentinfo">
             <!--será preenchido dinamicamente com /components/footer.html por /js/components.js-->
         </footer>
     </div>
@@ -157,3 +159,4 @@
 </body>
 
 </html>
+

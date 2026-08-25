@@ -2,17 +2,22 @@
     --header-image: url('');
     --body-bg-image: url('');
 
-    --content: 
+    --content:
 }
 
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: #6eb5e0/*#1E2D40*/;
+    background-color: #6eb5e0;
 }
 
 * {
     box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 #container {
@@ -21,26 +26,26 @@ body {
 }
 
 #container a {
-    color: #45718C /*#83c0f5*//*#45718C*/;
+    color: #45718C;
     font-weight: bold;
     text-decoration: none;
 }
 
-#container a:hover{
-    color: #11C5D9;
+#container a:hover {
+    color: #0a6f7d;
     text-decoration: underline;
 }
 
 #header {
     width: 100%;
-    background-color: #F2F2F2/*#F2F2F2*/;
+    background-color: #F2F2F2;
     height: 150px;
     background-size: 100%;
 }
 
 #navbar {
     padding: 12px 0;
-    background-color: #1E2D40/*#1E2D40*/;
+    background-color: #1E2D40;
     width: 100%;
 }
 
@@ -56,9 +61,8 @@ body {
     padding-top: 10px;
 }
 
-
 #navbar li a {
-    color: #45718C/*#45718C*/;
+    color: #45718C;
     padding: 10px 15px;
     display: inline-block;
     font-weight: 800;
@@ -66,7 +70,7 @@ body {
 }
 
 #navbar li a:hover {
-    color: #11C5D9/*#a49cba*/;
+    color: #0a6f7d;
     text-decoration: underline;
 }
 
@@ -75,17 +79,18 @@ body {
 }
 
 aside {
-    background-color: #45718C/*#241445*/;
+    background-color: #45718C;
     width: 200px;
     padding: 20px;
     font-size: smaller;
 }
 
 main {
-    background-color: #F2F2F2/*#0583F2*/;
+    background-color: #F2F2F2;
     flex: 1;
     padding: 20px;
     order: 2;
+    overflow-wrap: break-word;
 }
 
 #leftSidebar {
@@ -95,9 +100,9 @@ main {
 #leftSidebar:empty,
 #leftSidebar:not(:has(*)) {
     display: none;
-} 
+}
 
-#leftSidebar>h2 {
+#leftSidebar > h2 {
     color: #1E2D40;
 }
 
@@ -110,7 +115,7 @@ main {
 }
 
 footer {
-    background-color: #1E2D40/*#1E2D40*/;
+    background-color: #1E2D40;
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -120,7 +125,7 @@ footer {
 h1,
 h2,
 h3 {
-    color: #1a2730/*#45718C*/;
+    color: #1a2730;
 }
 
 h1 {
@@ -128,12 +133,12 @@ h1 {
 }
 
 strong {
-    color: #1a2730/*#45718C*/;
+    color: #1a2730;
 }
 
 .box {
-    background-color: #F2F2F2/*#1E2D40*/;
-    border: 1px solid #1a2730/*#45718C*/;
+    background-color: #F2F2F2;
+    border: 1px solid #1a2730;
     padding: 10px;
 }
 
@@ -142,7 +147,7 @@ strong {
     height: 30px;
     padding: 10px;
     font-size: smaller;
-    background-color: #83c0f5/*#1E2D40*/;
+    background-color: #83c0f5;
 }
 
 @media only screen and (max-width: 800px) {
@@ -168,19 +173,19 @@ strong {
 }
 
 #header {
-width: 100%;
-background-color: #ffffff;
-padding: 20px 30px;
-border-bottom: 5px solid #487596;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 5px solid #487596;
 
-display: flex;
-align-items: center;
-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #header .logo {
-height: 80px;
-width: auto;
+    height: 80px;
+    width: auto;
 }
 
 .header-titulo {
@@ -191,18 +196,16 @@ width: auto;
     font-weight: bold;
 }
 
-
-
-/* footer*/
+/* footer */
 
 #footer {
-background-color: #ffffff;
-border-top: 5px solid #487596 !important;
+    background-color: #ffffff;
+    border-top: 5px solid #487596 !important;
 }
 
 #footer .logo-footer {
-height: 50px;
-width: auto;
+    height: 50px;
+    width: auto;
 }
 
 .footer-titulo {
@@ -211,17 +214,12 @@ width: auto;
     font-size: 15px;
 }
 
+/* resto do css do header e do footer */
 
-
-/* resto do css do header e do footer que faltava aqui */
-
-/* a tag figure vem com margem do navegador, entao eu zero */
 .logo-figura {
     margin: 0;
 }
 
-/* as regras antigas la de cima fixam #header em 150px e footer em 40px.
-   com auto os dois voltam a crescer conforme o conteudo */
 #header {
     height: auto;
 }
@@ -242,70 +240,56 @@ width: auto;
     font-style: normal;
 }
 
-.footer-coluna-links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-}
-
-.footer-coluna-links li {
-    margin-bottom: 6px;
-}
-
-.footer-coluna-links a {
-    color: #345a75;
-    font-size: 13px;
-    line-height: 1.5;
-    text-decoration: none;
-}
-
-.footer-coluna-links a:hover {
-    text-decoration: underline;
-}
-
 .footer-coluna-contato a {
     color: #345a75;
 }
 
-
-/* reponsividade celular e tablet */
-
+/* responsividade celular e tablet */
 
 @media only screen and (max-width: 900px) {
 
     #header {
         padding: 15px 20px;
+        gap: 16px;
     }
 
     #header .logo {
-        height: 60px;
+        height: 52px;
     }
 
     .header-titulo {
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 
-
-
 @media only screen and (max-width: 600px) {
 
+    /* as duas logos dividem a primeira linha, o titulo desce para a segunda */
     #header {
-        flex-direction: column;
-        padding: 20px 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        gap: 8px;
     }
 
     #header .logo {
-        height: 55px;
-        margin-bottom: 12px;
+        height: 44px;
+        margin-bottom: 0;
+    }
+
+    /* :not() porque o link de pular conteudo tambem e filho direto do header */
+    #header > a:not(.pular-conteudo) {
+        display: inline-block;
+        padding: 4px;
     }
 
     .header-titulo {
-        font-size: 16px;
-        margin-bottom: 12px;
+        order: 3;
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 0;
     }
 
     #footer .logo-footer {
@@ -316,4 +300,281 @@ width: auto;
     .footer-titulo {
         font-size: 14px;
     }
+}
+
+@media only screen and (max-width: 360px) {
+
+    #header {
+        padding: 10px 12px;
+    }
+
+    #header .logo {
+        height: 38px;
+    }
+
+    .header-titulo {
+        font-size: 14px;
+    }
+}
+
+/* =========================================================
+   acessibilidade e navbar (.navbar-ime)
+   ---------------------------------------------------------
+   o bootstrap e injetado pelo js/components.js DEPOIS do
+   styles.css, entao em empate de especificidade ele ganha.
+   por isso as regras que precisam vencer o bootstrap e o
+   "#container a" legado sao escritas como "#container .navbar-ime ...".
+   a classe .navbar-ime tambem evita o id="navbar", que reativaria
+   as regras "#navbar" mortas no inicio deste arquivo.
+   ========================================================= */
+
+/* ---------- texto so para leitor de tela ---------- */
+
+.texto-oculto,
+.rotulo-home {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ---------- rotulo curto na barra, rotulo longo na gaveta ----------
+   na barra horizontal o nome completo nao cabe, entao fica no title e
+   aparece ao passar o mouse. na gaveta ha espaco e nao existe passar o
+   mouse, entao o nome completo vira texto mesmo. como e display: none,
+   so um dos dois esta na arvore de acessibilidade de cada vez. */
+
+.rotulo-longo {
+    display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .rotulo-curto {
+        display: none;
+    }
+
+    .rotulo-longo {
+        display: inline;
+    }
+
+    /* o "Home" deixa de ser so leitor de tela e vira texto ao lado do icone */
+    .rotulo-home {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+        white-space: normal;
+    }
+}
+
+/* ---------- pular para o conteudo ---------- */
+
+#container a.pular-conteudo {
+    position: fixed;
+    top: -100px;
+    left: 8px;
+    z-index: 2000;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    color: #345a75;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid #487596;
+    border-radius: 4px;
+    transition: top 0.15s ease;
+}
+
+#container a.pular-conteudo:focus {
+    top: 8px;
+}
+
+/* ---------- foco visivel no site inteiro ---------- */
+
+#container a:focus-visible,
+#container button:focus-visible {
+    outline: 3px solid #0a6f7d;
+    outline-offset: 2px;
+}
+
+main:focus,
+.reitoria:focus {
+    outline: none;
+}
+
+/* ---------- navbar ---------- */
+
+.navbar-ime {
+    background-color: #ffffff;
+    border-bottom: 5px solid #487596;
+    padding: 0 20px;
+}
+
+/* o #container e necessario porque o bootstrap entra depois do styles.css
+   e ganharia o empate no justify-content do .container-fluid */
+#container .navbar-ime .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+/* titulo que acompanha o botao de menu abaixo de 1200px */
+.navbar-ime .navbar-titulo {
+    color: #487596;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#container .navbar-ime .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #345a75;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#container .navbar-ime .nav-link:hover,
+#container .navbar-ime .nav-link:focus {
+    color: #487596;
+    background-color: #eaf2f7;
+    text-decoration: none;
+}
+
+#container .navbar-ime .dropdown-item {
+    color: #345a75;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+#container .navbar-ime .dropdown-item:hover,
+#container .navbar-ime .dropdown-item:focus {
+    color: #487596;
+    background-color: #eaf2f7;
+    text-decoration: none;
+}
+
+#container .navbar-ime .dropdown-menu {
+    border-color: #d6e4ee;
+}
+
+#container .navbar-ime .navbar-toggler {
+    color: #345a75;
+    border-color: #d6e4ee;
+    margin: 8px 0;
+}
+
+#container .navbar-ime .offcanvas-title {
+    color: #345a75;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar-ime .icone-home {
+    display: block;
+    flex-shrink: 0;
+}
+
+/* ---------- integracao offcanvas + navbar ----------
+   o bootstrap 5.0.2 tem offcanvas, mas so integra offcanvas
+   com navbar a partir do 5.2, entao a integracao e escrita aqui.
+   o "display: none" do toggler e explicito porque a regra do
+   bootstrap empata em especificidade e o resultado dependeria
+   da ordem de carregamento. */
+
+@media only screen and (min-width: 1200px) {
+    #container .navbar-ime .navbar-toggler { display: none; }
+    .navbar-ime .navbar-titulo { display: none; }
+    .navbar-ime .offcanvas {
+        position: static; z-index: auto; flex-grow: 1;
+        width: auto !important; height: auto !important;
+        visibility: visible !important; background-color: transparent !important;
+        border: 0 !important; transform: none !important; transition: none;
+    }
+    .navbar-ime .offcanvas-header { display: none; }
+    .navbar-ime .offcanvas-body { display: flex; flex-grow: 0; padding: 0; overflow-y: visible; }
+
+    /* os itens ocupam a largura toda em vez de ficarem colados a esquerda */
+    .navbar-ime .offcanvas-body > .navbar-nav {
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+}
+
+/* ---------- submenu no hover ----------
+   o "display" nao anima, por isso a troca por opacidade.
+   o "top/left" e obrigatorio porque sem clique o bootstrap
+   nunca cria o data-bs-popper.
+   o "(hover: hover)" evita menu preso aberto em tela de toque;
+   no celular o caminho continua sendo o data-bs-toggle="dropdown". */
+
+@media only screen and (min-width: 1200px) and (hover: hover) {
+    .navbar-ime .nav-item.dropdown > .dropdown-menu {
+        display: block; top: 100%; left: 0; margin-top: 0;
+        opacity: 0; visibility: hidden; transform: translateY(-6px);
+        transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+        pointer-events: none;
+    }
+    .navbar-ime .nav-item.dropdown:hover > .dropdown-menu,
+    .navbar-ime .nav-item.dropdown:focus-within > .dropdown-menu,
+    .navbar-ime .nav-item.dropdown > .dropdown-menu.show {
+        opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto;
+    }
+}
+
+/* ---------- titulo unico conforme a largura ----------
+   abaixo de 1200px o titulo sai do header e passa a acompanhar o
+   botao de menu, para nao sobrar uma barra quase vazia. como e
+   display: none, so um dos dois existe na arvore de acessibilidade
+   de cada vez, sem leitura duplicada. */
+
+@media only screen and (max-width: 1199px) {
+    .header-titulo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-ime .navbar-titulo {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-ime .navbar-titulo {
+        font-size: 13px;
+    }
+}
+
+/* ---------- lista da pagina de links uteis ---------- */
+
+.lista-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-links li {
+    margin-bottom: 20px;
+}
+
+#container .lista-links a {
+    font-weight: 700;
+}
+
+.lista-links p {
+    margin: 4px 0 0 0;
 }

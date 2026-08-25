@@ -9,21 +9,21 @@
 </head>
 <body>
     <div id="container">
-        <div id="header">
+        <div id="header" role="banner">
             <!--será preenchido dinamicamente com /components/header.html por /js/components.js-->
         </div>
         <div id="headerArea">
-            <nav id="navbar">
+            <nav id="navbar" role="navigation">
                <!--será preenchido dinamicamente com /components/navbar.html por /js/components.js-->
             </nav>
         </div>
     
         <div id="flex">
-            <aside id="leftSidebar">
+            <aside id="leftSidebar" role="complementary">
                 <!--será preenchido dinamicamente com /components/sidebar.html por /js/components.js-->
             </aside>
-            <main>
-                <h2>Pró-reitoria de Políticas e Assistência Estudantis - PR4</h2>
+            <main id="conteudo" tabindex="-1" role="main">
+                <h1>Pró-reitoria de Políticas e Assistência Estudantis - PR4</h1>
                 <h3>Departamentos pertencentes a PR4</h3>
                 <ul>
                     <li>
@@ -42,11 +42,11 @@
                 </ul>
                 <h3>Programas de Assistência Estudantil</h3>
                 <p>
-                    Informações relacionadas aos programas de assistência estudantil tais como: <strong>Avaliação Socioeconômica, Passe Livre Universitário, Bolsa Permanência, Bolsa Apoio à Vulnerabilidade Social, Auxílio Transporte, Alimentação e Material Didático </strong> são de responsabilidade da Pró-Reitoria de Políticas e Assistência Estudantil - PR4 e estão disponíveis no site <a href="http://www.pr4.uerj.br" target="_blank" rel="noopener noreferrer">www.pr4.uerj.br</a>.
+                    Informações relacionadas aos programas de assistência estudantil tais como: <strong>Avaliação Socioeconômica, Passe Livre Universitário, Bolsa Permanência, Bolsa Apoio à Vulnerabilidade Social, Auxílio Transporte, Alimentação e Material Didático </strong> são de responsabilidade da Pró-Reitoria de Políticas e Assistência Estudantil - PR4 e estão disponíveis no site <a href="https://www.pr4.uerj.br" target="_blank" rel="noopener noreferrer">www.pr4.uerj.br<span class="texto-oculto"> (abre em nova aba)</span></a>.
                 </p>
             </main>
         </div>
-        <footer id="footer">
+        <footer id="footer" role="contentinfo">
             <!--será preenchido dinamicamente com /components/footer.html por /js/components.js-->
         </footer>
     </div>
@@ -54,3 +54,4 @@
 </body>
 
 </html>
+

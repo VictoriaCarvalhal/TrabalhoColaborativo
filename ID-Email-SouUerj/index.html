@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caderno de Orientações Alunos IME</title>
+    <title>ID Único, E-mail e SOU UERJ - Informativo aos Alunos IME</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="container">
-        <div id="header"></div>
+        <div id="header" role="banner">
+            <!--será preenchido dinamicamente com /components/header.html por /js/components.js-->
+        </div>
         <div id="headerArea">
-            <nav id="navbar">
+            <nav id="navbar" role="navigation">
                 <ul>
                     <!--Será preenchido dinâmicamente-->
                 </ul>
@@ -19,16 +21,12 @@
         </div>
     
         <div id="flex">
-            <aside id="leftSidebar">
-                <h2>Side Bar da Esquerda</h2>
-                <div class="box">
-                    <ul>
-                        <!--Será preenchido dinâmicamente-->
-                    </ul>
-                </div>
-                
+            <aside id="leftSidebar" role="complementary">
+                <!--será preenchido dinamicamente com /components/sidebar.html por /js/components.js-->
             </aside>
-            <main>
+            <main id="conteudo" tabindex="-1" role="main">
+                <h1>ID Único, E-mail e SOU UERJ</h1>
+
                 <article class="card-texto">
                   <h2>ID Único</h2>
                   <p>
@@ -44,13 +42,13 @@
       
                       <p>Como cadastrar:</p>
                       <ul>
-                          <li>Abra o navegador e digite na barra de endereços <a href="https://sig.uerj.br/" target="_blank">https://sig.uerj.br/</a>;</li>
+                          <li>Abra o navegador e digite na barra de endereços <a href="https://sig.uerj.br/" target="_blank" rel="noopener noreferrer">https://sig.uerj.br/<span class="texto-oculto"> (abre em nova aba)</span></a>;</li>
                           <li>Clique nos três tracinhos na lateral direita no topo;</li>
                           <li>Clique em primeiro acesso;</li>
                           <li>Informe seu CPF e o seu e-mail não Uerj;</li>
                           <li>Clique em continuar.</li>
                           
-                          <a href="https://www.dgti.uerj.br/servicos/webmail-aluno-e-servidor" target="_blank">https://www.dgti.uerj.br/servicos/webmail-aluno-e-servidor</a>
+                          <a href="https://www.dgti.uerj.br/servicos/webmail-aluno-e-servidor" target="_blank" rel="noopener noreferrer">https://www.dgti.uerj.br/servicos/webmail-aluno-e-servidor<span class="texto-oculto"> (abre em nova aba)</span></a>
                       </ul>
               </article>
       
@@ -99,11 +97,13 @@
                   <p>
                       O acesso é feito por meio do ID Único.
                   </p>
-                  <a href="https://www.uerj.br/a-uerj/comunidade-da-uerj/wi-fi-uerj/" target="_blank">www.uerj.br/a-uerj/comunidade-da-uerj/wi-fi-uerj/</a>
+                  <a href="https://www.uerj.br/a-uerj/comunidade-da-uerj/wi-fi-uerj/" target="_blank" rel="noopener noreferrer">www.uerj.br/a-uerj/comunidade-da-uerj/wi-fi-uerj/<span class="texto-oculto"> (abre em nova aba)</span></a>
               </article>
             </main>
         </div>
-        <footer id="footer"></footer>
+        <footer id="footer" role="contentinfo">
+            <!--será preenchido dinamicamente com /components/footer.html por /js/components.js-->
+        </footer>
     </div>
     <script src="../js/components.js"></script>
 </body>

@@ -11,53 +11,111 @@
         <li><a href="/inscricao-disciplinas/">Inscrição em Disciplinas</a></li>
     </ul>
 </nav> -->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-xl navbar-light navbar-ime" aria-label="Menu principal">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/Explicacao-site/">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuIme" aria-controls="menuIme" aria-label="Abrir menu de navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/reitoria-sec/">Reitoria</a>
-                </li>
+        <!-- so aparece abaixo de 1200px; acima disso quem mostra o titulo e o header -->
+        <span class="navbar-titulo">Informativo aos Alunos - IME / UERJ</span>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Departamentos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="/pr1/">PR1</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="/departamentos-pr4/">PR4</a>
-                        </li>
-                    </ul>
-                </li>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="menuIme" aria-labelledby="menuImeTitulo">
+            <div class="offcanvas-header">
+                <span class="offcanvas-title" id="menuImeTitulo">Menu</span>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar menu"></button>
+            </div>
+
+            <!--
+                os rotulos vem em duas versoes: .rotulo-curto cabe na barra
+                horizontal acima de 1200px, .rotulo-longo aparece na gaveta,
+                onde ha espaco e onde nao existe passar o mouse para ver o
+                title. so um dos dois existe de cada vez, entao o leitor de
+                tela nunca le os dois.
+            -->
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/aluno-online/">Aluno Online</a>
+                        <a class="nav-link nav-link-home" href="/Explicacao-site/" title="Home">
+                            <svg class="icone-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3L12 3z" />
+                            </svg>
+                            <span class="rotulo-home">Home</span>
+                        </a>
                     </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/ID-Email-SouUerj/">ID, Email e SOU UERJ</a>
-                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Pró-reitorias, Secretaria e Departamentos">
+                            Reitorias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/reitoria-sec/#pr1" title="Pró-reitoria de Graduação">PR1 - Graduação</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/reitoria-sec/#pr2" title="Pró-reitoria de Pós-graduação e Pesquisa">PR2 - Pós-graduação e Pesquisa</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/reitoria-sec/#pr3" title="Pró-reitoria de Extensão e Cultura">PR3 - Extensão e Cultura</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/reitoria-sec/#pr4" title="Pró-reitoria de Políticas e Assistência Estudantis">PR4 - Assistência Estudantil</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/reitoria-sec/#pr5" title="Pró-reitoria de Saúde">PR5 - Saúde</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/reitoria-sec/#pr6" title="Pró-reitoria de Planejamento e Gestão">PR6 - Planejamento e Gestão</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/reitoria-sec/#secretaria" title="Secretaria de Graduação do IME">Secretaria de Graduação</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="/pr1/" title="Departamentos pertencentes a PR1">Departamentos da PR1</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/departamentos-pr4/" title="Departamentos pertencentes a PR4">Departamentos da PR4</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/cursos-departamentos/">Cursos e Departamentos</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aluno-online/" title="Aluno Online">Aluno Online</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/info-biblioteca/">Biblioteca</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ID-Email-SouUerj/" title="ID Único, E-mail e SOU UERJ">
+                            <span class="rotulo-curto">ID e Email</span>
+                            <span class="rotulo-longo">ID, Email e SOU UERJ</span>
+                        </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/inscricao-disciplinas/">Inscrição em Disciplinas</a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cursos-departamentos/" title="Cursos e Departamentos">
+                            <span class="rotulo-curto">Cursos</span>
+                            <span class="rotulo-longo">Cursos e Departamentos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/info-biblioteca/" title="Bibliotecas da Uerj - Rede Sirius">Biblioteca</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/inscricao-disciplinas/" title="Inscrição em Disciplinas">
+                            <span class="rotulo-curto">Inscrição</span>
+                            <span class="rotulo-longo">Inscrição em Disciplinas</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/links_uteis/" title="Links Úteis">Links Úteis</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
