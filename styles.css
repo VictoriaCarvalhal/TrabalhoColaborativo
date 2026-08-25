@@ -240,30 +240,6 @@ strong {
     font-style: normal;
 }
 
-.footer-coluna-links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-}
-
-.footer-coluna-links li {
-    margin-bottom: 6px;
-}
-
-.footer-coluna-links a {
-    color: #345a75;
-    font-size: 13px;
-    line-height: 1.5;
-    text-decoration: none;
-}
-
-.footer-coluna-links a:hover {
-    text-decoration: underline;
-}
-
 .footer-coluna-contato a {
     color: #345a75;
 }
@@ -323,10 +299,6 @@ strong {
 
     .footer-titulo {
         font-size: 14px;
-    }
-
-    .footer-coluna-links ul {
-        grid-template-columns: 1fr;
     }
 }
 
@@ -400,7 +372,8 @@ strong {
     outline-offset: 2px;
 }
 
-main:focus {
+main:focus,
+.reitoria:focus {
     outline: none;
 }
 
@@ -412,9 +385,20 @@ main:focus {
     padding: 0 20px;
 }
 
-.navbar-ime .container-fluid {
+/* o #container e necessario porque o bootstrap entra depois do styles.css
+   e ganharia o empate no justify-content do .container-fluid */
+#container .navbar-ime .container-fluid {
     padding-left: 0;
     padding-right: 0;
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+/* titulo que acompanha o botao de menu abaixo de 1200px */
+.navbar-ime .navbar-titulo {
+    color: #487596;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 #container .navbar-ime .nav-link {
@@ -481,6 +465,7 @@ main:focus {
 
 @media only screen and (min-width: 1200px) {
     #container .navbar-ime .navbar-toggler { display: none; }
+    .navbar-ime .navbar-titulo { display: none; }
     .navbar-ime .offcanvas {
         position: static; z-index: auto; flex-grow: 1;
         width: auto !important; height: auto !important;
@@ -489,6 +474,12 @@ main:focus {
     }
     .navbar-ime .offcanvas-header { display: none; }
     .navbar-ime .offcanvas-body { display: flex; flex-grow: 0; padding: 0; overflow-y: visible; }
+
+    /* os itens ocupam a largura toda em vez de ficarem colados a esquerda */
+    .navbar-ime .offcanvas-body > .navbar-nav {
+        flex-grow: 1;
+        justify-content: space-between;
+    }
 }
 
 /* ---------- submenu no hover ----------
@@ -510,4 +501,48 @@ main:focus {
     .navbar-ime .nav-item.dropdown > .dropdown-menu.show {
         opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto;
     }
+}
+
+/* ---------- titulo unico conforme a largura ----------
+   abaixo de 1200px o titulo sai do header e passa a acompanhar o
+   botao de menu, para nao sobrar uma barra quase vazia. como e
+   display: none, so um dos dois existe na arvore de acessibilidade
+   de cada vez, sem leitura duplicada. */
+
+@media only screen and (max-width: 1199px) {
+    .header-titulo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-ime .navbar-titulo {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-ime .navbar-titulo {
+        font-size: 13px;
+    }
+}
+
+/* ---------- lista da pagina de links uteis ---------- */
+
+.lista-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-links li {
+    margin-bottom: 20px;
+}
+
+#container .lista-links a {
+    font-weight: 700;
+}
+
+.lista-links p {
+    margin: 4px 0 0 0;
 }
