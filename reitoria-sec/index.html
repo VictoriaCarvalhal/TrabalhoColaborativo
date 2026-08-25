@@ -8,18 +8,18 @@
   </head>
   <body>
     <div id="container">
-      <div id="header">
+      <div id="header" role="banner">
         <!--será preenchido dinamicamente com /components/header.html por /js/components.js-->
       </div>
       <div id="headerArea">
-        <nav id="navbar">
+        <nav id="navbar" role="navigation">
           <!--será preenchido dinamicamente com /components/navbar.html por /js/components.js-->
         </nav>
       </div>
 
       <div id="flex">
-        <aside id="leftSidebar"></aside>
-        <main id="conteudo" tabindex="-1">
+        <aside id="leftSidebar" role="complementary"></aside>
+        <main id="conteudo" tabindex="-1" role="main">
           <h1>Reitoria e Pró-reitorias</h1>
 
           <section id="reitoria" class="reitoria">
@@ -293,7 +293,7 @@
           </section>
         </main>
       </div>
-      <footer id="footer"></footer>
+      <footer id="footer" role="contentinfo"></footer>
     </div>
 
     <script src="../js/components.js"></script>
