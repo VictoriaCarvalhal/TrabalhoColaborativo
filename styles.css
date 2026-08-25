@@ -343,6 +343,38 @@ strong {
     border: 0;
 }
 
+/* ---------- rotulo curto na barra, rotulo longo na gaveta ----------
+   na barra horizontal o nome completo nao cabe, entao fica no title e
+   aparece ao passar o mouse. na gaveta ha espaco e nao existe passar o
+   mouse, entao o nome completo vira texto mesmo. como e display: none,
+   so um dos dois esta na arvore de acessibilidade de cada vez. */
+
+.rotulo-longo {
+    display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .rotulo-curto {
+        display: none;
+    }
+
+    .rotulo-longo {
+        display: inline;
+    }
+
+    /* o "Home" deixa de ser so leitor de tela e vira texto ao lado do icone */
+    .rotulo-home {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+        white-space: normal;
+    }
+}
+
 /* ---------- pular para o conteudo ---------- */
 
 #container a.pular-conteudo {
