@@ -26,6 +26,13 @@
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar menu"></button>
             </div>
 
+            <!--
+                os rotulos vem em duas versoes: .rotulo-curto cabe na barra
+                horizontal acima de 1200px, .rotulo-longo aparece na gaveta,
+                onde ha espaco e onde nao existe passar o mouse para ver o
+                title. so um dos dois existe de cada vez, entao o leitor de
+                tela nunca le os dois.
+            -->
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
 
@@ -39,16 +46,10 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Reitoria e Pró-reitorias">
-                            Reitoria
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Pró-reitorias, Secretaria e Departamentos">
+                            Reitorias
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="/reitoria-sec/">Reitoria</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/reitoria-sec/#vice-reitoria">Vice-reitoria</a>
-                            </li>
                             <li>
                                 <a class="dropdown-item" href="/reitoria-sec/#pr1" title="Pró-reitoria de Graduação">PR1 - Graduação</a>
                             </li>
@@ -68,7 +69,7 @@
                                 <a class="dropdown-item" href="/reitoria-sec/#pr6" title="Pró-reitoria de Planejamento e Gestão">PR6 - Planejamento e Gestão</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="/reitoria-sec/#secretaria">Secretaria de Graduação</a>
+                                <a class="dropdown-item" href="/reitoria-sec/#secretaria" title="Secretaria de Graduação do IME">Secretaria de Graduação</a>
                             </li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
@@ -81,27 +82,36 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/aluno-online/">Aluno Online</a>
+                        <a class="nav-link" href="/aluno-online/" title="Aluno Online">Aluno Online</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/ID-Email-SouUerj/" title="ID, Email e SOU UERJ">ID e Email</a>
+                        <a class="nav-link" href="/ID-Email-SouUerj/" title="ID Único, E-mail e SOU UERJ">
+                            <span class="rotulo-curto">ID e Email</span>
+                            <span class="rotulo-longo">ID, Email e SOU UERJ</span>
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/cursos-departamentos/" title="Cursos e Departamentos">Cursos</a>
+                        <a class="nav-link" href="/cursos-departamentos/" title="Cursos e Departamentos">
+                            <span class="rotulo-curto">Cursos</span>
+                            <span class="rotulo-longo">Cursos e Departamentos</span>
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/info-biblioteca/">Biblioteca</a>
+                        <a class="nav-link" href="/info-biblioteca/" title="Bibliotecas da Uerj - Rede Sirius">Biblioteca</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/inscricao-disciplinas/" title="Inscrição em Disciplinas">Inscrição</a>
+                        <a class="nav-link" href="/inscricao-disciplinas/" title="Inscrição em Disciplinas">
+                            <span class="rotulo-curto">Inscrição</span>
+                            <span class="rotulo-longo">Inscrição em Disciplinas</span>
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/links_uteis/">Links Úteis</a>
+                        <a class="nav-link" href="/links_uteis/" title="Links Úteis">Links Úteis</a>
                     </li>
 
                 </ul>
@@ -109,4 +119,3 @@
         </div>
     </div>
 </nav>
-
